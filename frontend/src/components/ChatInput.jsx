@@ -46,6 +46,7 @@ function ChatInput() {
   );
 
   const data = await response.json();
+  console.log(data);
 
   setMessages((prev) => [
     ...prev,

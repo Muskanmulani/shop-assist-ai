@@ -50,4 +50,13 @@ async function searchProducts(vector) {
 
   return results;
 }
-export { getDB, addProducts, searchProducts };
+
+async function tableExists() {
+  const db = await getDB();
+
+  const tables = await db.tableNames();
+
+  return tables.includes("products");
+}
+
+export { getDB, addProducts, searchProducts, tableExists };

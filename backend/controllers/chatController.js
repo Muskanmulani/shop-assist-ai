@@ -59,11 +59,14 @@ Keep the answer helpful and conversational.
     });
 
   } catch (error) {
-    console.error(error);
+  console.log("========== CHAT ERROR ==========");
+  console.log(error);
+  console.log(error.message);
+  console.log(error.stack);
+  console.log("================================");
 
-    res.status(500).json({
-      success: false,
-      reply: "Something went wrong.",
-    });
-  }
-};
+  res.status(500).json({
+    success: false,
+    reply: "Something went wrong.",
+  });
+}};

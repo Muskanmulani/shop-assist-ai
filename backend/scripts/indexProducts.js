@@ -47,12 +47,5 @@ async function indexProducts() {
   console.log("✅ All MongoDB products indexed into LanceDB!");
 }
 
-indexProducts()
-  .then(() => {
-    console.log("Done");
-    process.exit(0);
-  })
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
-  });
+export { indexProducts };
+
