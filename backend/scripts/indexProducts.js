@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import connectDB from "../config/db.js";
-import Product from "../models/Product.js";
+import Product from "../models/product.js";
 
 const { createEmbedding } = await import("../services/embeddingService.js");
 const { addProducts } = await import("../services/lanceService.js");
