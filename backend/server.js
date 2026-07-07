@@ -8,7 +8,7 @@ connectDB();
 const app = express();
 app.use(express.json());
 app.use(cors());
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 import homeRoutes from "./routes/homeRoutes.js";
 import chatRoutes from "./routes/chatRoutes.js";
