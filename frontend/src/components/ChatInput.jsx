@@ -32,25 +32,29 @@ function ChatInput() {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/api/chat", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          message: userMessage,
-        }),
-      });
+  const response = await fetch(
+    "https://shop-assist-ai-backend.onrender.com/api/chat",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        message: userMessage,
+      }),
+    }
+  );
 
-      const data = await response.json();
+  const data = await response.json();
 
-      setMessages((prev) => [
-        ...prev,
-        {
-          sender: "ai",
-          text: data.reply,
-        },
-      ]);
+  setMessages((prev) => [
+    ...prev,
+    {
+      sender: "ai",
+      text: data.reply,
+    },
+  ]);
+
     } catch (error) {
       setMessages((prev) => [
         ...prev,
