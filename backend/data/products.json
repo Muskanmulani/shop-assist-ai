@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy S24",
+    "brand": "Samsung",
+    "category": "Smartphone",
+    "price": 64999,
+    "rating": 4.7,
+    "stock": 18,
+    "description": "Flagship Android smartphone with Snapdragon processor, AMOLED display and AI features."
+  },
+  {
+    "id": 2,
+    "name": "iPhone 15",
+    "brand": "Apple",
+    "category": "Smartphone",
+    "price": 69999,
+    "rating": 4.8,
+    "stock": 10,
+    "description": "Apple smartphone with A16 Bionic chip, excellent cameras and long software support."
+  },
+  {
+    "id": 3,
+    "name": "OnePlus 13",
+    "brand": "OnePlus",
+    "category": "Smartphone",
+    "price": 59999,
+    "rating": 4.6,
+    "stock": 15,
+    "description": "Premium Android smartphone with fast charging and Snapdragon processor."
+  },
+  {
+    "id": 4,
+    "name": "Lenovo LOQ 15",
+    "brand": "Lenovo",
+    "category": "Laptop",
+    "price": 68999,
+    "rating": 4.5,
+    "stock": 8,
+    "description": "Gaming laptop with Intel Core i5 processor, RTX 4050 graphics and 16GB RAM."
+  },
+  {
+    "id": 5,
+    "name": "ASUS TUF A15",
+    "brand": "ASUS",
+    "category": "Laptop",
+    "price": 72999,
+    "rating": 4.6,
+    "stock": 12,
+    "description": "Gaming laptop with AMD Ryzen processor, RTX graphics and high refresh rate display."
+  }
+]
